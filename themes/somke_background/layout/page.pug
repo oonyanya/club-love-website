@@ -1,15 +1,16 @@
 extend _page_base
 
 block custom_header
-	include _header
-	#main_titile
-		- if(page != undefined)
-			- if(page.title_image != undefined)
-				h1
-					img(src=`${page.title_image}` alt=`${page.title}`)
-			- else
-				h1 #{page.title}
-	nav#bread
+	#main_logo
+		include _header
+		#main_titile
+			- if(page != undefined)
+				- if(page.title_image != undefined)
+					h1
+						img(src=`${page.title_image}` alt=`${page.title}`)
+				- else
+					h1 #{page.title}
+		nav#bread
 
 block content
 	#infomation

@@ -1,11 +1,12 @@
 extend _page_base
 
 block custom_header
-	include _header
-	#main_titile
-		picture
-			source(media="(max-width: 768px)" srcset=`${res.company_info.mobile_image_path}`)
-			img(src=`${res.company_info.image_path}`)
+	#main_logo.index_page
+		include _header
+		#main_titile
+			picture
+				source(media="(max-width: 768px)" srcset=`${res.company_info.mobile_image_path}`)
+				img(src=`${res.company_info.image_path}`)
 
 block content
 		#infomation
