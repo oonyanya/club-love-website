@@ -1,0 +1,48 @@
+{
+	"ja": {
+		"lang_name":"日本語",
+		"company_info": {
+			"name": "DUMMY",
+			"tel": "00-1234-5678",
+			"fax_tel": "00-1234-5678",
+			"mobile" : "00-1234-5678",
+			"opentime": "営業時間 11時から18時",
+			"mail": "test@yahoo.co.jp",
+			"about_page_url": "/ja/about.html",
+			"about_page_title": "DUMMYについて",
+			"image_path":"/image/accelerate.png",
+			"mobile_image_path":"/image/accelerate_mobile.png",
+			"query_button_label":"お問い合わせはこちらから"
+		},
+		"index": {
+			"prerelease_title":"ニュース",
+			"oldarchives_title":"過去のニュース",
+			"oldarchives_summary":"過去のニュースの一覧です",
+			"oldarchives_title_by_category":"カテゴリー一覧",
+			"oldarchives_title_by_tag":"タグ一覧"
+		}
+	},
+	"en": {
+		"lang_name":"English",
+		"company_info": {
+			"name": "DUMMY",
+			"tel": "00-1234-5678",
+			"fax_tel": "00-1234-5678",
+			"mobile" : "00-1234-5678",
+			"opentime": "OPEN TIME 11:00-18:00",
+			"mail": "test@yahoo.co.jp",
+			"about_page_url": "/en/about.html",
+			"about_page_title": "ABOUT DUMMY",
+			"image_path":"/image/accelerate.png",
+			"mobile_image_path":"/image/accelerate_mobile.png",
+			"query_button_label":"Query"
+		},
+		"index": {
+			"prerelease_title":"NEWS",
+			"oldarchives_title":"OLD NEWS",
+			"oldarchives_summary":"OLD NEWS LIST",
+			"oldarchives_title_by_category":"CATEGORIES LIST",
+			"oldarchives_title_by_tag":"TAGS LIST"
+		}
+	}
+}

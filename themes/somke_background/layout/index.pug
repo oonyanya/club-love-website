@@ -1,0 +1,28 @@
+extend _page_base
+
+block custom_header
+	include _header
+	#main_titile
+		picture
+			source(media="(max-width: 768px)" srcset=`${res.company_info.mobile_image_path}`)
+			img(src=`${res.company_info.image_path}`)
+
+block content
+		#infomation
+			| !{page.content}
+			#topics
+				each item in get_pages()
+					#summary
+						h3
+							a(href=`/${item.path}`) #{item.title}
+						- if(item.thumbnail != null)
+							img(src=`${item.thumbnail}`)
+						p #{item.summary}
+				if config.archive_generator.enabled == true
+					#summary
+						h3
+							a(href=`${url_for_i18n('archives')}`) #{res.index.oldarchives_title}
+						p #{res.index.oldarchives_summary}
+
+block custom_footer
+	include _footer

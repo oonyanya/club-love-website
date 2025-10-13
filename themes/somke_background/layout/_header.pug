@@ -1,0 +1,13 @@
+﻿- res = get_resouce()
+
+nav.global_nav
+  .top_menu_label MENU
+  ul.top_menu
+    li
+      a(href='/') TOP
+    each item in get_pages()
+      li.dropdown-parent
+        a(href=`/${item.path}`) #{item.title}
+    if config.archive_generator.enabled == true
+      li
+        a(href=`${url_for_i18n('archives')}`) #{res.index.oldarchives_title}

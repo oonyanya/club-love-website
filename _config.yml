@@ -1,0 +1,41 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Club LOVE
+subtitle: ''
+description: ''
+keywords:
+author: cowcowhomes co.ltd
+language: [ja,en]
+timezone: ''
+
+url: https://test.io
+root: /
+permalink: :language/:year/:month/:day/:title/
+new_post_name: :language/:year/:month/:day/:title/:title.md
+per_page: 0
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+theme: somke_background
+
+include:
+  - .htaccess
+
+archive_generator:
+  enabled: false
+
+highlight:
+  enable: true
+  line_number: false
+
+post_asset_folder: true
+markdown:
+  images:
+    prependRoot: true
+    postAsset: true
+
+disqus_shortname: hexojs

@@ -1,0 +1,33 @@
+---
+layout: page
+title: 認証
+language: ja
+date: 2020-11-19 13:24:57
+tags:
+thumbnail: /image/default_topics.png
+summary: about website template
+hidden: true
+---
+script
+	| function onCheckAge(result)
+	| {
+	|   if(result)
+	|  {
+	|    window.alert('18歳未満は利用できません');
+	|    location.href='https://yahoo.co.jp';
+	|    }else{
+	|      let url = new URL(window.location.href);
+	|      // ８日間保存する
+	|      document.cookie = 'auth=true;path=/;max-age=691200;domain=' + url.hostname;
+	|      let params = url.searchParams;
+	|      let new_url = url.origin + decodeURIComponent(params.get('jmp')) + "?authed=true";
+	|      location.href= new_url;
+	|    }
+	| return false;
+	| }
+p １８歳以上ですか？
+div(name='birthday_check')
+	a(href='#' onclick='onCheckAge(false)')
+		img(src=`/auth/image/1-2-button1.svg` alt=`YES` class=`button_img`)
+	a(href='#' onclick='onCheckAge(true)')
+		img(src=`/auth/image/1-2-button2.svg` alt=`NO` class=`button_img`)
