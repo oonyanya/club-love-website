@@ -29,6 +29,9 @@ centering(width)
             padding 13px 5px 11px 25px
 
 #main_titile
+    centering(95%)
+    align-items center
+    text-align center
     padding 3em 0em
     picture
         & > img
@@ -126,31 +129,18 @@ footer
     #copyright
         text-align center
 
+#main_logo
+    display flex
+    flex-direction column
+
 @media screen and (max-width: 768px)
     .global_nav
         position absolute
         z-index 1000
     .top_menu
         height 100vh
-    #main_titile
-        & > h1
-            align-items center
-            text-align center
 
 @media screen and (min-width: 769px)
-    #main_logo
-        display grid
-        grid-template-rows auto auto auto
-        grid-template-columns auto auto
-        nav.global_nav
-            grid-row 1/2
-            grid-column 1/2
-        #main_titile
-            grid-row 2/3
-            grid-column 1/2
-        #bread
-            grid-row 3/4
-            grid-column 1/2
     #company_infomation
         centering(95%)
         display flex
@@ -160,9 +150,6 @@ footer
             flex 1
         align-items center
         justify-content center
-    #main_titile
-        centering(95%)
-        text-align right
     #topics
         & > div
             margin-bottom 10px
