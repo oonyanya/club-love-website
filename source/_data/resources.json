@@ -2,14 +2,14 @@
 	"ja": {
 		"lang_name":"日本語",
 		"company_info": {
-			"name": "DUMMY",
+			"name": "スナック愛",
 			"tel": "00-1234-5678",
 			"fax_tel": "00-1234-5678",
 			"mobile" : "00-1234-5678",
 			"opentime": "営業時間 11時から18時",
 			"mail": "test@yahoo.co.jp",
 			"about_page_url": "/ja/about.html",
-			"about_page_title": "DUMMYについて",
+			"about_page_title": "スナック愛について",
 			"image_path":"/image/accelerate.png",
 			"mobile_image_path":"/image/accelerate_mobile.png",
 			"query_button_label":"お問い合わせはこちらから"
@@ -25,14 +25,14 @@
 	"en": {
 		"lang_name":"English",
 		"company_info": {
-			"name": "DUMMY",
+			"name": "SNACK LOVE",
 			"tel": "00-1234-5678",
 			"fax_tel": "00-1234-5678",
 			"mobile" : "00-1234-5678",
 			"opentime": "OPEN TIME 11:00-18:00",
 			"mail": "test@yahoo.co.jp",
 			"about_page_url": "/en/about.html",
-			"about_page_title": "ABOUT DUMMY",
+			"about_page_title": "ABOUT SNACK LOVE",
 			"image_path":"/image/accelerate.png",
 			"mobile_image_path":"/image/accelerate_mobile.png",
 			"query_button_label":"Query"
