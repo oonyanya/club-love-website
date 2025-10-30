@@ -89,14 +89,17 @@ main
     li
         margin-left 20px
         line-height 1.5em
-    table
-        border-collapse collapse
     th
         padding 10px
         line-height 1.5em
     td
         padding 10px
         line-height 1.5em
+    table
+        border-collapse collapse
+        thead
+           tr:has(th:empty)
+               display none
     iframe,p,table,img
         margin 10px
     p
